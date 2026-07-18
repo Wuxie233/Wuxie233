@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="820" viewBox="0 0 720 820" role="img" aria-labelledby="title desc">
+  <title id="title">Wuxie, AI-native full-stack product engineer</title>
+  <desc id="desc">Mobile editorial cover defining human ownership and agent assistance.</desc>
+  <rect width="720" height="820" fill="#ffffff"/>
+  <rect width="24" height="820" fill="#d51f4b"/>
+  <text x="56" y="60" fill="#111111" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700">WUXIE / PROFILE 2026</text>
+  <path d="M56 82H672" stroke="#111111" stroke-width="2"/>
+  <text x="56" y="205" fill="#111111" font-family="Arial Black, Arial, sans-serif" font-size="112" font-weight="900">WUXIE</text>
+  <text x="56" y="270" fill="#111111" font-family="Arial, Helvetica, sans-serif" font-size="37" font-weight="700">AI-native full-stack</text>
+  <text x="56" y="316" fill="#111111" font-family="Arial, Helvetica, sans-serif" font-size="37" font-weight="700">product engineer</text>
+  <rect x="56" y="370" width="616" height="160" fill="#111111"/>
+  <text x="86" y="416" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="27" font-weight="700">HUMAN OWNS</text>
+  <text x="86" y="462" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="29">Problem · Architecture</text>
+  <text x="86" y="501" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="29">Integration · Verification</text>
+  <rect x="56" y="550" width="616" height="138" fill="#f2f1ed"/>
+  <text x="86" y="596" fill="#d51f4b" font-family="Arial, Helvetica, sans-serif" font-size="27" font-weight="700">AGENTS ASSIST</text>
+  <text x="86" y="644" fill="#111111" font-family="Arial, Helvetica, sans-serif" font-size="29">Research · Implementation · Review</text>
+  <circle cx="68" cy="750" r="9" fill="#d51f4b"/>
+  <text x="94" y="760" fill="#111111" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700">Verifiable products, not prompt demos.</text>
+</svg>

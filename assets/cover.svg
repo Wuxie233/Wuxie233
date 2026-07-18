@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="560" viewBox="0 0 1280 560" role="img" aria-labelledby="title desc">
+  <title id="title">Wuxie, AI-native full-stack product engineer</title>
+  <desc id="desc">An editorial cover introducing Wuxie and the responsibility split between human judgment and agent execution.</desc>
+  <rect width="1280" height="560" fill="#ffffff"/>
+  <rect x="0" y="0" width="36" height="560" fill="#d51f4b"/>
+  <path d="M76 72H1204M76 488H1204" stroke="#111111" stroke-width="2"/>
+  <text x="76" y="53" fill="#111111" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700">WUXIE / PROFILE 2026</text>
+  <text x="1204" y="53" fill="#111111" font-family="Arial, Helvetica, sans-serif" font-size="18" text-anchor="end">ADVENTUREX EDITION · 01</text>
+  <text x="76" y="178" fill="#111111" font-family="Arial Black, Arial, sans-serif" font-size="112" font-weight="900">WUXIE</text>
+  <text x="76" y="246" fill="#111111" font-family="Arial, Helvetica, sans-serif" font-size="38" font-weight="700">AI-native full-stack product engineer</text>
+  <rect x="76" y="292" width="604" height="124" fill="#111111"/>
+  <text x="106" y="333" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700">HUMAN OWNS</text>
+  <text x="106" y="373" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="25">Problem · Architecture · Integration · Verification</text>
+  <rect x="704" y="292" width="500" height="124" fill="#f2f1ed"/>
+  <text x="734" y="333" fill="#d51f4b" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700">AGENTS ASSIST</text>
+  <text x="734" y="373" fill="#111111" font-family="Arial, Helvetica, sans-serif" font-size="25">Research · Implementation · Review</text>
+  <circle cx="93" cy="522" r="8" fill="#d51f4b"/>
+  <text x="116" y="529" fill="#111111" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700">Building verifiable products, not prompt demos.</text>
+  <text x="1204" y="529" fill="#111111" font-family="Arial, Helvetica, sans-serif" font-size="18" text-anchor="end">CHINA · 07 FRESHMAN</text>
+</svg>

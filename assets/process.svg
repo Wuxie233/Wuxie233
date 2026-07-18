@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="360" viewBox="0 0 1280 360" role="img" aria-labelledby="title desc">
+  <title id="title">Wuxie's delivery process</title>
+  <desc id="desc">Four steps: frame the problem, design boundaries, direct execution and verify the result.</desc>
+  <rect width="1280" height="360" fill="#111111"/>
+  <text x="48" y="58" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="700">HOW I WORK / A CLOSED DELIVERY LOOP</text>
+  <g font-family="Arial, Helvetica, sans-serif">
+    <g fill="#d51f4b" font-family="Arial Black, Arial, sans-serif" font-size="66" font-weight="900"><text x="48" y="160">01</text><text x="350" y="160">02</text><text x="652" y="160">03</text><text x="954" y="160">04</text></g>
+    <g fill="#ffffff" font-size="27" font-weight="700"><text x="48" y="209">Frame the problem</text><text x="350" y="209">Design boundaries</text><text x="652" y="209">Direct execution</text><text x="954" y="209">Verify the result</text></g>
+    <g fill="#b8b6b0" font-size="17"><text x="48" y="247">user · constraint · evidence</text><text x="350" y="247">interfaces · ownership · failure</text><text x="652" y="247">agents · integration · decisions</text><text x="954" y="247">tests · interaction · fallback</text></g>
+    <path d="M48 292H1232" stroke="#ffffff" stroke-width="2" opacity="0.4"/>
+    <circle cx="48" cy="292" r="7" fill="#d51f4b"/><circle cx="350" cy="292" r="7" fill="#d51f4b"/><circle cx="652" cy="292" r="7" fill="#d51f4b"/><circle cx="954" cy="292" r="7" fill="#d51f4b"/><circle cx="1232" cy="292" r="7" fill="#ffffff"/>
+    <text x="48" y="330" fill="#ffffff" font-size="17">The next iteration starts from recorded evidence, not reconstructed memory.</text>
+  </g>
+</svg>

@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="480" viewBox="0 0 1280 480" role="img" aria-labelledby="title desc">
+  <title id="title">SpireVibePlaying system evidence</title>
+  <desc id="desc">A decision pipeline that combines captured game state, deterministic solving, probability and LLM advice.</desc>
+  <rect width="1280" height="480" fill="#ffffff"/>
+  <text x="48" y="58" fill="#d51f4b" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700">03 / HYBRID DECISION SYSTEM</text>
+  <text x="48" y="130" fill="#111111" font-family="Arial Black, Arial, sans-serif" font-size="58" font-weight="900">SpireVibePlaying</text>
+  <text x="48" y="174" fill="#55524e" font-family="Arial, Helvetica, sans-serif" font-size="22">Deterministic analysis first; language model advice second.</text>
+  <g font-family="Arial, Helvetica, sans-serif">
+    <rect x="48" y="230" width="196" height="142" fill="#111111"/>
+    <text x="72" y="267" fill="#d51f4b" font-size="16" font-weight="700">CAPTURE</text>
+    <text x="72" y="308" fill="#ffffff" font-size="25" font-weight="700">Game state</text>
+    <text x="72" y="340" fill="#c9c7c0" font-size="16">deck · hand · combat</text>
+    <rect x="298" y="230" width="196" height="142" fill="#f2f1ed" stroke="#111111" stroke-width="2"/>
+    <text x="322" y="267" fill="#d51f4b" font-size="16" font-weight="700">CALCULATE</text>
+    <text x="322" y="308" fill="#111111" font-size="25" font-weight="700">Probability</text>
+    <text x="322" y="340" fill="#55524e" font-size="16">draw odds · tracking</text>
+    <rect x="548" y="212" width="236" height="178" fill="#d51f4b"/>
+    <text x="572" y="253" fill="#ffffff" font-size="16" font-weight="700">SOLVE</text>
+    <text x="572" y="301" fill="#ffffff" font-size="33" font-weight="700">DFS combat</text>
+    <text x="572" y="338" fill="#ffffff" font-size="17">multi-turn prediction</text>
+    <text x="572" y="365" fill="#ffffff" font-size="17">explicit search space</text>
+    <rect x="838" y="230" width="196" height="142" fill="#f2f1ed" stroke="#111111" stroke-width="2"/>
+    <text x="862" y="267" fill="#d51f4b" font-size="16" font-weight="700">INTERPRET</text>
+    <text x="862" y="308" fill="#111111" font-size="25" font-weight="700">LLM advice</text>
+    <text x="862" y="340" fill="#55524e" font-size="16">contextual explanation</text>
+    <rect x="1088" y="230" width="144" height="142" fill="#111111"/>
+    <text x="1112" y="267" fill="#d51f4b" font-size="16" font-weight="700">SHOW</text>
+    <text x="1112" y="308" fill="#ffffff" font-size="25" font-weight="700">In-game</text>
+    <text x="1112" y="340" fill="#c9c7c0" font-size="16">UI overlay</text>
+    <g stroke="#111111" stroke-width="2"><path d="M244 301H286"/><path d="M494 301H536"/><path d="M784 301H826"/><path d="M1034 301H1076"/></g>
+  </g>
+</svg>

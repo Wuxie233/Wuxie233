@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="480" viewBox="0 0 1280 480" role="img" aria-labelledby="title desc">
+  <title id="title">micode system evidence</title>
+  <desc id="desc">A system diagram showing requirements, planning, implementation, review and durable knowledge in micode.</desc>
+  <rect width="1280" height="480" fill="#f2f1ed"/>
+  <rect x="0" y="0" width="320" height="480" fill="#111111"/>
+  <text x="40" y="54" fill="#d51f4b" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700">01 / AGENT ENGINEERING</text>
+  <text x="40" y="126" fill="#ffffff" font-family="Arial Black, Arial, sans-serif" font-size="62" font-weight="900">micode</text>
+  <text x="40" y="178" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="24">OpenCode plugin</text>
+  <path d="M40 220H280" stroke="#ffffff" stroke-width="1" opacity="0.45"/>
+  <text x="40" y="260" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="19">Structured delivery</text>
+  <text x="40" y="294" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="19">Layered knowledge</text>
+  <text x="40" y="328" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="19">Failure recovery</text>
+  <text x="40" y="362" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="19">GitHub lifecycle</text>
+  <text x="40" y="438" fill="#aaa9a4" font-family="Arial, Helvetica, sans-serif" font-size="16">Based on vtemian/micode</text>
+  <g font-family="Arial, Helvetica, sans-serif">
+    <text x="368" y="62" fill="#111111" font-size="18" font-weight="700">ONE CONVERSATION BECOMES AN AUDITABLE DELIVERY PATH</text>
+    <g fill="#ffffff" stroke="#111111" stroke-width="2">
+      <rect x="368" y="118" width="166" height="92"/>
+      <rect x="568" y="118" width="166" height="92"/>
+      <rect x="768" y="118" width="166" height="92"/>
+      <rect x="968" y="118" width="166" height="92"/>
+    </g>
+    <g fill="#111111" font-size="20" font-weight="700" text-anchor="middle">
+      <text x="451" y="159">ALIGN</text><text x="651" y="159">PLAN</text><text x="851" y="159">BUILD</text><text x="1051" y="159">REVIEW</text>
+    </g>
+    <g fill="#66635f" font-size="15" text-anchor="middle">
+      <text x="451" y="184">scope + acceptance</text><text x="651" y="184">tasks + interfaces</text><text x="851" y="184">agents + worktrees</text><text x="1051" y="184">tests + evidence</text>
+    </g>
+    <g stroke="#d51f4b" stroke-width="4" fill="none"><path d="M534 164H556"/><path d="M734 164H756"/><path d="M934 164H956"/></g>
+    <rect x="368" y="278" width="766" height="120" fill="#d51f4b"/>
+    <text x="398" y="319" fill="#ffffff" font-size="17" font-weight="700">DURABLE CONTEXT</text>
+    <text x="398" y="360" fill="#ffffff" font-size="27">Domain rules · Decisions · Recovery state · Verification history</text>
+    <path d="M1050 278V236H451V218" stroke="#111111" stroke-width="2" fill="none"/>
+    <text x="1100" y="253" fill="#111111" font-size="15" text-anchor="end">next session resumes here</text>
+  </g>
+</svg>
