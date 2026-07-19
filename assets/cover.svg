@@ -1,20 +1,19 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="560" viewBox="0 0 1280 560" role="img" aria-labelledby="title desc">
-  <title id="title">Wuxie, AI-native full-stack product engineer</title>
-  <desc id="desc">An editorial cover introducing Wuxie and the responsibility split between human judgment and agent execution.</desc>
-  <rect width="1280" height="560" fill="#ffffff"/>
-  <rect x="0" y="0" width="36" height="560" fill="#d51f4b"/>
-  <path d="M76 72H1204M76 488H1204" stroke="#111111" stroke-width="2"/>
-  <text x="76" y="53" fill="#111111" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700">WUXIE / PROFILE 2026</text>
-  <text x="1204" y="53" fill="#111111" font-family="Arial, Helvetica, sans-serif" font-size="18" text-anchor="end">ADVENTUREX EDITION · 01</text>
-  <text x="76" y="178" fill="#111111" font-family="Arial Black, Arial, sans-serif" font-size="112" font-weight="900">WUXIE</text>
-  <text x="76" y="246" fill="#111111" font-family="Arial, Helvetica, sans-serif" font-size="38" font-weight="700">AI-native full-stack product engineer</text>
-  <rect x="76" y="292" width="604" height="124" fill="#111111"/>
-  <text x="106" y="333" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700">HUMAN OWNS</text>
-  <text x="106" y="373" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="25">Problem · Architecture · Integration · Verification</text>
-  <rect x="704" y="292" width="500" height="124" fill="#f2f1ed"/>
-  <text x="734" y="333" fill="#d51f4b" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700">AGENTS ASSIST</text>
-  <text x="734" y="373" fill="#111111" font-family="Arial, Helvetica, sans-serif" font-size="25">Research · Implementation · Review</text>
-  <circle cx="93" cy="522" r="8" fill="#d51f4b"/>
-  <text x="116" y="529" fill="#111111" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700">Building verifiable products, not prompt demos.</text>
-  <text x="1204" y="529" fill="#111111" font-family="Arial, Helvetica, sans-serif" font-size="18" text-anchor="end">CHINA · 07 FRESHMAN</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="400" viewBox="0 0 1280 400" role="img" aria-labelledby="title desc">
+  <title id="title">Wuxie product studio</title>
+  <desc id="desc">Independent product developer and AI-native full-stack builder working across product, engineering, AI systems, and interaction.</desc>
+  <rect width="1280" height="400" fill="#F4F4F0"/>
+  <rect x="0" y="0" width="18" height="400" fill="#2457FF"/>
+  <path d="M56 62H1224M56 338H1224" stroke="#111111" stroke-width="2"/>
+  <text x="58" y="42" fill="#111111" font-family="Arial, sans-serif" font-size="15" font-weight="700">WUXIE / PRODUCT STUDIO</text>
+  <text x="1222" y="42" fill="#111111" text-anchor="end" font-family="Arial, sans-serif" font-size="15">BUILD · SHIP · VERIFY</text>
+  <text x="56" y="192" fill="#111111" font-family="Arial, sans-serif" font-size="126" font-weight="800">WUXIE</text>
+  <text x="62" y="248" fill="#111111" font-family="Arial, 'Noto Sans SC', sans-serif" font-size="28" font-weight="700">独立产品开发者 / AI-NATIVE FULL-STACK BUILDER</text>
+  <g font-family="Arial, sans-serif" font-size="14" font-weight="700">
+    <rect x="58" y="285" width="184" height="34" fill="#2457FF"/><text x="150" y="307" text-anchor="middle" fill="#FFFFFF">PRODUCT &amp; UX</text>
+    <rect x="250" y="285" width="184" height="34" fill="#FF5A36"/><text x="342" y="307" text-anchor="middle" fill="#111111">FULL-STACK</text>
+    <rect x="442" y="285" width="184" height="34" fill="#168C78"/><text x="534" y="307" text-anchor="middle" fill="#FFFFFF">AI SYSTEMS</text>
+  </g>
+  <circle cx="1120" cy="196" r="74" fill="none" stroke="#111111" stroke-width="2"/>
+  <circle cx="1120" cy="196" r="48" fill="#2457FF"/>
+  <path d="M1046 196h36l14-25 22 51 18-38 13 12h45" fill="none" stroke="#F4F4F0" stroke-width="5" stroke-linejoin="round"/>
 </svg>

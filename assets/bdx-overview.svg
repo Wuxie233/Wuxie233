@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="440" viewBox="0 0 1280 440" role="img" aria-labelledby="title desc">
+  <title id="title">BDXSuperTool verified feature overview</title>
+  <desc id="desc">A feature overview showing conversion between MCFunction, BDX, JSON, and text, plus incremental updates and command chain properties. This is not a product screenshot.</desc>
+  <rect width="1280" height="440" fill="#111111"/>
+  <rect x="36" y="32" width="1208" height="376" fill="#F4F4F0"/>
+  <text x="70" y="77" fill="#111111" font-family="Arial, sans-serif" font-size="15" font-weight="700">BDXSUPERTOOL / VERIFIED FEATURE OVERVIEW</text>
+  <text x="1210" y="77" fill="#555555" text-anchor="end" font-family="Arial, sans-serif" font-size="13">NOT A PRODUCT SCREENSHOT</text>
+  <path d="M70 98H1210" stroke="#111111" stroke-width="2"/>
+  <text x="70" y="161" fill="#111111" font-family="Arial, sans-serif" font-size="42" font-weight="800">COMMAND CHAIN CONVERSION</text>
+  <g font-family="Arial, sans-serif">
+    <rect x="70" y="204" width="220" height="82" fill="#2457FF"/><text x="180" y="253" text-anchor="middle" fill="#FFFFFF" font-size="22" font-weight="700">MCFUNCTION</text>
+    <path d="M306 245H382" stroke="#111111" stroke-width="4"/><path d="M368 232L383 245 368 258" fill="none" stroke="#111111" stroke-width="4"/>
+    <rect x="398" y="188" width="220" height="114" fill="#FF5A36"/><text x="508" y="253" text-anchor="middle" fill="#111111" font-size="28" font-weight="800">BDX</text>
+    <path d="M634 225H710" stroke="#111111" stroke-width="4"/><path d="M696 212L711 225 696 238" fill="none" stroke="#111111" stroke-width="4"/>
+    <path d="M710 265H634" stroke="#111111" stroke-width="4"/><path d="M648 252L633 265 648 278" fill="none" stroke="#111111" stroke-width="4"/>
+    <rect x="726" y="204" width="202" height="82" fill="#168C78"/><text x="827" y="253" text-anchor="middle" fill="#FFFFFF" font-size="22" font-weight="700">JSON / TEXT</text>
+    <rect x="950" y="204" width="260" height="82" fill="#FFFFFF" stroke="#111111" stroke-width="2"/><text x="1080" y="238" text-anchor="middle" fill="#111111" font-size="16" font-weight="700">INCREMENTAL UPDATE</text><text x="1080" y="264" text-anchor="middle" fill="#555555" font-size="15">CHAIN PROPERTIES</text>
+  </g>
+  <path d="M70 331H1210" stroke="#B8B8B2"/>
+  <text x="70" y="369" fill="#111111" font-family="Arial, 'Noto Sans SC', sans-serif" font-size="17">个人独立开发 · FASTAPI + REACT · SOURCE PRIVATE</text>
+</svg>

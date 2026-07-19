@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="780" viewBox="0 0 720 780" role="img" aria-labelledby="title desc">
+  <title id="title">BDXSuperTool verified feature overview</title>
+  <desc id="desc">A mobile feature overview showing conversion between MCFunction, BDX, JSON, and text. This is not a product screenshot.</desc>
+  <rect width="720" height="780" fill="#111111"/>
+  <rect x="28" y="28" width="664" height="724" fill="#F4F4F0"/>
+  <text x="52" y="72" fill="#111111" font-family="Arial, sans-serif" font-size="17" font-weight="700">BDXSUPERTOOL / FEATURE OVERVIEW</text>
+  <text x="52" y="105" fill="#555555" font-family="Arial, sans-serif" font-size="15">NOT A PRODUCT SCREENSHOT</text>
+  <path d="M52 128H668" stroke="#111111" stroke-width="2"/>
+  <text x="52" y="181" fill="#111111" font-family="Arial, sans-serif" font-size="34" font-weight="800">COMMAND CHAIN</text>
+  <text x="52" y="221" fill="#111111" font-family="Arial, sans-serif" font-size="34" font-weight="800">CONVERSION</text>
+  <g font-family="Arial, sans-serif" font-size="22" font-weight="700">
+    <rect x="52" y="265" width="616" height="76" fill="#2457FF"/><text x="360" y="311" text-anchor="middle" fill="#FFFFFF">MCFUNCTION</text>
+    <text x="360" y="378" text-anchor="middle" fill="#111111" font-size="30">↓</text>
+    <rect x="52" y="400" width="616" height="86" fill="#FF5A36"/><text x="360" y="452" text-anchor="middle" fill="#111111" font-size="27">BDX</text>
+    <text x="360" y="526" text-anchor="middle" fill="#111111" font-size="30">↕</text>
+    <rect x="52" y="548" width="298" height="76" fill="#168C78"/><text x="201" y="594" text-anchor="middle" fill="#FFFFFF">JSON / TEXT</text>
+    <rect x="370" y="548" width="298" height="76" fill="#FFFFFF" stroke="#111111" stroke-width="2"/><text x="519" y="581" text-anchor="middle" fill="#111111" font-size="18">INCREMENTAL UPDATE</text><text x="519" y="606" text-anchor="middle" fill="#555555" font-size="16">CHAIN PROPERTIES</text>
+  </g>
+  <path d="M52 664H668" stroke="#B8B8B2"/>
+  <text x="52" y="704" fill="#111111" font-family="Arial, 'Noto Sans SC', sans-serif" font-size="18">个人独立开发 · FASTAPI + REACT</text>
+  <text x="52" y="731" fill="#555555" font-family="Arial, sans-serif" font-size="16">SOURCE PRIVATE</text>
+</svg>

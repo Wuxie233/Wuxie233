@@ -1,20 +1,19 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="720" height="820" viewBox="0 0 720 820" role="img" aria-labelledby="title desc">
-  <title id="title">Wuxie, AI-native full-stack product engineer</title>
-  <desc id="desc">Mobile editorial cover defining human ownership and agent assistance.</desc>
-  <rect width="720" height="820" fill="#ffffff"/>
-  <rect width="24" height="820" fill="#d51f4b"/>
-  <text x="56" y="60" fill="#111111" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700">WUXIE / PROFILE 2026</text>
-  <path d="M56 82H672" stroke="#111111" stroke-width="2"/>
-  <text x="56" y="205" fill="#111111" font-family="Arial Black, Arial, sans-serif" font-size="112" font-weight="900">WUXIE</text>
-  <text x="56" y="270" fill="#111111" font-family="Arial, Helvetica, sans-serif" font-size="37" font-weight="700">AI-native full-stack</text>
-  <text x="56" y="316" fill="#111111" font-family="Arial, Helvetica, sans-serif" font-size="37" font-weight="700">product engineer</text>
-  <rect x="56" y="370" width="616" height="160" fill="#111111"/>
-  <text x="86" y="416" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="27" font-weight="700">HUMAN OWNS</text>
-  <text x="86" y="462" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="29">Problem · Architecture</text>
-  <text x="86" y="501" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="29">Integration · Verification</text>
-  <rect x="56" y="550" width="616" height="138" fill="#f2f1ed"/>
-  <text x="86" y="596" fill="#d51f4b" font-family="Arial, Helvetica, sans-serif" font-size="27" font-weight="700">AGENTS ASSIST</text>
-  <text x="86" y="644" fill="#111111" font-family="Arial, Helvetica, sans-serif" font-size="29">Research · Implementation · Review</text>
-  <circle cx="68" cy="750" r="9" fill="#d51f4b"/>
-  <text x="94" y="760" fill="#111111" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700">Verifiable products, not prompt demos.</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="620" viewBox="0 0 720 620" role="img" aria-labelledby="title desc">
+  <title id="title">Wuxie product studio</title>
+  <desc id="desc">Independent product developer and AI-native full-stack builder.</desc>
+  <rect width="720" height="620" fill="#F4F4F0"/>
+  <rect width="14" height="620" fill="#2457FF"/>
+  <path d="M44 68H676M44 548H676" stroke="#111111" stroke-width="2"/>
+  <text x="44" y="45" fill="#111111" font-family="Arial, sans-serif" font-size="16" font-weight="700">WUXIE / PRODUCT STUDIO</text>
+  <text x="44" y="210" fill="#111111" font-family="Arial, sans-serif" font-size="104" font-weight="800">WUXIE</text>
+  <text x="48" y="266" fill="#111111" font-family="Arial, 'Noto Sans SC', sans-serif" font-size="26" font-weight="700">独立产品开发者</text>
+  <text x="48" y="304" fill="#111111" font-family="Arial, sans-serif" font-size="22" font-weight="700">AI-NATIVE FULL-STACK BUILDER</text>
+  <g font-family="Arial, sans-serif" font-size="16" font-weight="700">
+    <rect x="46" y="358" width="192" height="42" fill="#2457FF"/><text x="142" y="385" text-anchor="middle" fill="#FFFFFF">PRODUCT &amp; UX</text>
+    <rect x="246" y="358" width="192" height="42" fill="#FF5A36"/><text x="342" y="385" text-anchor="middle" fill="#111111">FULL-STACK</text>
+    <rect x="446" y="358" width="192" height="42" fill="#168C78"/><text x="542" y="385" text-anchor="middle" fill="#FFFFFF">AI SYSTEMS</text>
+  </g>
+  <circle cx="580" cy="484" r="48" fill="#2457FF"/>
+  <path d="M532 484h24l10-18 15 35 12-26 9 9h27" fill="none" stroke="#F4F4F0" stroke-width="4" stroke-linejoin="round"/>
+  <text x="46" y="588" fill="#111111" font-family="Arial, sans-serif" font-size="15">BUILD · SHIP · VERIFY</text>
 </svg>

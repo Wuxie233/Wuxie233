@@ -1,104 +1,118 @@
 <p align="center">
   <picture>
     <source media="(max-width: 600px)" srcset="./assets/cover-mobile.svg" />
-    <img src="./assets/cover.svg" alt="Wuxie, AI-native full-stack product engineer. Human owns problem framing, architecture, integration and verification; agents assist with research, implementation and review." width="100%" />
+    <img src="./assets/cover.svg" alt="Wuxie, independent product developer and AI-native full-stack builder." width="100%" />
   </picture>
 </p>
 
-我从高考结束后持续使用 Agents 完成真实项目。我的职责不是转发模型输出，而是确定问题、系统边界和验收标准，组织实现，再对集成结果与失败路径负责。
+我做能直接使用的产品，也喜欢把复杂系统整理成顺手的工具。从产品定义、交互和系统设计，到前后端实现、部署与验证，我会完整负责一条产品线。
 
-目前担任 **Minecraft 网络服技术负责人及核心系统开发**，项目正在开发，计划上线网易平台。同时准备 **AdventureX 2026**，寻找愿意从真实问题出发、一起完成可验证原型的队友。
+Agents 已经进入我的日常开发流程；需求取舍、架构决策、集成质量和最终结果仍由我负责。
 
-`Product judgment` · `System architecture` · `Full-stack delivery` · `UX quality` · `Agent orchestration`
+`Product` · `Full-stack` · `AI agents` · `Developer tools` · `Interaction design`
 
----
-
-## Selected work
-
-### 01 · [micode](https://github.com/Wuxie233/micode)
-
-<picture>
-  <source media="(max-width: 600px)" srcset="./assets/project-micode-mobile.svg" />
-  <img src="./assets/project-micode.svg" alt="micode turns requirement alignment, planning, implementation and review into an auditable delivery path with durable context." width="100%" />
-</picture>
-
-面向 OpenCode 的结构化多 Agent 工程插件。它把需求对齐、规划、并行实现、审查和恢复组织成可追踪的交付路径，并用分层知识保存跨会话上下文。
-
-**我的工作：** 工作流设计、领域边界、Agent 编排、GitHub 生命周期、集成与验收。项目最初基于 [`vtemian/micode`](https://github.com/vtemian/micode)，随后进行了实质重构与扩展。
-
-`TypeScript` `OpenCode` `Multi-agent` `Workflow design`
-
----
-
-### 02 · [RimWorld AI](https://github.com/Wuxie233/RimWorldMod_RimWorldAI)
+<p>
+  <a href="https://wuxie233.com">Website</a> ·
+  <a href="https://space.bilibili.com/254160530">Bilibili</a> ·
+  <a href="mailto:445714414@qq.com">Email</a>
+</p>
 
 <picture>
-  <source media="(max-width: 600px)" srcset="./assets/project-rimworld-mobile.svg" />
-  <img src="./assets/project-rimworld.svg" alt="RimWorld AI isolates the game mod, MCP tools, independent agent runtime and operations WebUI." width="100%" />
+  <source media="(max-width: 600px)" srcset="./assets/github-stats-mobile.svg" />
+  <img src="./assets/github-stats.svg" alt="GitHub contributions over the latest rolling year" width="100%" />
 </picture>
 
-RimWorld 多 Agent 殖民地管理系统。游戏 Mod 只通过 MCP 暴露受控工具，独立 Agent Runtime 负责规划和调用，WebUI 提供运行状态、日志与人工控制。
+## Products
 
-**我的工作：** 协议边界、运行时架构、多 Agent 协作、工具接入、WebUI 集成和故障修复。公开仓库保留了 Agent 协作痕迹及问题处理记录。
+### [Pulse](https://pulse.wuxie233.com) · 交易前，看清钱包风险
 
-`C#` `Python` `MCP` `Multi-agent` `WebUI`
+<img src="./assets/pulse.png" alt="Pulse wallet health analysis product interface" width="100%" />
+
+面向 Mantle 的钱包健康分析与交易前风险工具。确定性模型先计算集中度、流动性、协议依赖等五类风险，AI 再解释结果；提交交易前还会解码 calldata，给出安全、谨慎或危险判断。报告哈希可由具备 ERC-8004 身份的 Agent 发布到链上复核。
+
+**我负责：** 产品定义、风险模型、合约、前后端、交互、部署。<br />
+**可验证：** [线上 App](https://pulse.wuxie233.com) · [公开仓库](https://github.com/Wuxie233/pulse)
+
+`TypeScript` `Onchain` `Risk model` `AI explanation`
 
 ---
 
-### 03 · [SpireVibePlaying](https://github.com/Wuxie233/SpireVibePlaying)
-
-<picture>
-  <source media="(max-width: 600px)" srcset="./assets/project-spire-mobile.svg" />
-  <img src="./assets/project-spire.svg" alt="SpireVibePlaying combines captured game state, draw probability, deterministic DFS combat solving, LLM explanation and an in-game interface." width="100%" />
-</picture>
-
-《Slay the Spire 2》AI 辅助 Mod。系统先跟踪牌堆与计算抽牌概率，再用 DFS 做战斗求解和多回合预测；LLM 负责结合上下文解释建议，结果显示在游戏内界面。
-
-**我的工作：** 状态捕获、确定性求解、模型接入、交互界面与整体集成。目前没有公开 Release、外部用户数据或可复核 Demo，因此不宣称规模化使用。
-
-`C#` `DFS` `Probability` `LLM` `In-game UI`
-
----
-
-### 04 · [Pulse](https://github.com/Wuxie233/pulse)
-
-<picture>
-  <source media="(max-width: 600px)" srcset="./assets/project-pulse-mobile.svg" />
-  <img src="./assets/project-pulse.svg" alt="Pulse reads wallet and transaction signals, evaluates wallet health and exposure, then creates a decision checkpoint before submission." width="100%" />
-</picture>
-
-面向 Mantle 的钱包健康分析与交易前风险防线。系统用确定性五维模型评估钱包状态，再由 AI 解释风险；报告哈希由具备 ERC-8004 身份的 Agent 发布到链上，可通过公开页面复核。交易提交前，防火墙会解码 calldata 并给出安全、谨慎或危险判断。
-
-**我的工作：** 产品问题定义、风险模型、合约与前后端实现、交互体验、部署和演示闭环。当前有[线上 App](https://pulse.wuxie233.com)、已验证合约与公开验证样例。
-
-`TypeScript` `Wallet analysis` `Risk UX` `Mantle`
-
----
-
-## How I work
-
-<picture>
-  <source media="(max-width: 600px)" srcset="./assets/process-mobile.svg" />
-  <img src="./assets/process.svg" alt="Four-step delivery loop: frame the problem, design boundaries, direct execution and verify the result." width="100%" />
-</picture>
-
-1. **确认问题。** 明确用户、约束、非目标与可接受的验收证据。
-2. **设计边界。** 确定组件职责、接口、权限、错误路径与人工接管方式。
-3. **组织实现。** 把可并行工作交给不同 Agents，同时保留清晰归属与最终决策权。
-4. **验证结果。** 使用构建、测试、日志、真实交互和主动制造的失败场景验收。
-
-Agent 是实现与审查工具。产品判断、架构选择、集成质量和最终结果由我负责。
-
----
-
-## AdventureX 2026
-
-目前方向开放。我更关心题目是否来自真实问题、价值能否测量、原型能否现场演示，以及模型、网络或硬件失效后是否还能降级运行。
-
-我不限定队友职位。产品与用户研究、交互与视觉、硬件落地、AI 算法，或掌握某个垂直场景真实需求的人都可以。希望你有自己的判断和实践，愿意一起砍需求、做验证，并把贡献归属说清楚。
-
-**补充经历：** 大一获蓝桥杯全国总决赛国家三等奖。
+### [oc-remote](https://github.com/Wuxie233/oc-remote) · 把本地 Coding Agent 带到手机上
 
 <p align="center">
-  <strong>GitHub · <a href="https://github.com/Wuxie233">Wuxie233</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;QQ · 445714414</strong>
+  <picture>
+    <source media="(max-width: 600px)" srcset="./assets/oc-chat.jpg" />
+    <img src="./assets/oc-showcase.jpg" alt="oc-remote server, coding agent conversation, and settings screens" width="100%" />
+  </picture>
 </p>
+
+基于 [`crim50n/oc-remote`](https://github.com/crim50n/oc-remote) 持续开发的 Android 客户端，用手机连接远端 OpenCode / Codex 工作环境。我的扩展包括 Codex app-server、移动端 Terminal / PTY、多服务器管理、15 种语言、离线草稿，以及大型会话的稳定性修复。
+
+**我负责：** 上述功能的设计、实现、移动端体验和问题修复。<br />
+**可验证：** [Fork 与提交记录](https://github.com/Wuxie233/oc-remote)
+
+`Kotlin` `Android` `Codex app-server` `PTY`
+
+---
+
+### [BDXSuperTool](https://bdx.wuxie233.com/) · 命令链格式转换工具
+
+<picture>
+  <source media="(max-width: 600px)" srcset="./assets/bdx-overview-mobile.svg" />
+  <img src="./assets/bdx-overview.svg" alt="BDXSuperTool verified feature overview, not a product screenshot" width="100%" />
+</picture>
+
+把 Minecraft 基岩版命令链的转换和维护集中到一个 Web 工具里。支持 `MCFunction → BDX`、`BDX → MCFunction / JSON`、`文本 → BDX`，并提供增量更新、命令链属性配置和深浅主题。
+
+**个人独立开发，源码私有。**<br />
+**可验证：** [线上产品](https://bdx.wuxie233.com/)
+
+`FastAPI` `React` `Minecraft Bedrock` `Format conversion`
+
+---
+
+### [FlyBuild](https://build.flyshop.chat/) · 跨格式建筑工作台
+
+<picture>
+  <source media="(max-width: 600px)" srcset="./assets/flybuild-overview-mobile.svg" />
+  <img src="./assets/flybuild-overview.svg" alt="FlyBuild verified feature overview, not a product screenshot" width="100%" />
+</picture>
+
+面向 Minecraft 建筑文件的管理与转换工作台。现有产品包含文件管理、导入导出任务、3D 预览、分享码、工作流和服务器配置，覆盖 `.bdx`、`.mcstructure`、`.schem`、`.schematic`、`.litematic`、`.mcworld` 及常见图片格式。
+
+**个人独立开发，源码私有。** 导入链路仍在重做，因此这里不把它写成已经稳定运营的服务。<br />
+**可验证：** [线上产品](https://build.flyshop.chat/)
+
+`Web app` `3D preview` `File pipeline` `Workflow`
+
+## Engineering Work
+
+### [micode](https://github.com/Wuxie233/micode)
+
+面向 OpenCode 的多 Agent 工程插件：把需求对齐、规划、并行实现、审查和恢复放进一条可追踪的工作流。项目从 [`vtemian/micode`](https://github.com/vtemian/micode) 出发，后来重做了工作流、领域边界、GitHub 生命周期和分层知识系统。
+
+### [RimWorld AI](https://github.com/Wuxie233/RimWorldMod_RimWorldAI)
+
+RimWorld 多 Agent 殖民地管理系统。游戏 Mod 通过 MCP 暴露受控工具，独立 Runtime 负责规划与调用，WebUI 负责状态、日志和人工控制。
+
+### [SpireVibePlaying](https://github.com/Wuxie233/SpireVibePlaying)
+
+《Slay the Spire 2》AI 辅助 Mod。它跟踪牌堆并计算抽牌概率，用确定性 DFS 求解战斗，再让 LLM 结合上下文解释建议。
+
+## Capability Stack
+
+| Product | Engineering | AI systems |
+|---|---|---|
+| 产品定义、交互设计、风险与失败路径 | TypeScript、Python、Kotlin、C#、React、FastAPI | LLM API、MCP、Function Calling、多 Agent 编排 |
+| 原型验证、Web / Android 体验 | GitHub Actions、容器、部署、日志与测试 | 工具权限、上下文管理、人工接管与结果验收 |
+
+## Elsewhere
+
+<table>
+  <tr>
+    <td width="96"><a href="https://space.bilibili.com/254160530"><img src="./assets/bilibili-avatar.jpg" alt="无邪大得很 Bilibili avatar" width="72" /></a></td>
+    <td><strong><a href="https://space.bilibili.com/254160530">无邪大得很</a></strong><br />在 B 站分享 Minecraft 命令、工具开发、创意和实现思路。相比完整教学，我更常讲清一个想法怎样落地。</td>
+  </tr>
+</table>
+
+<p align="center"><strong>Wuxie · Build the product, then prove it works.</strong></p>

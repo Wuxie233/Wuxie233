@@ -1,0 +1,37 @@
+name: Update profile stats
+
+on:
+  schedule:
+    - cron: "23 2 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: profile-stats
+  cancel-in-progress: true
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Generate anonymous rolling-year totals
+        env:
+          PROFILE_STATS_TOKEN: ${{ secrets.PROFILE_STATS_TOKEN }}
+        run: node scripts/update-stats.mjs
+      - name: Commit changed totals
+        run: |
+          if git diff --quiet -- assets/github-stats.svg assets/github-stats-mobile.svg; then
+            exit 0
+          fi
+          git config user.name "Wuxie233"
+          git config user.email "445714414@qq.com"
+          git add assets/github-stats.svg assets/github-stats-mobile.svg
+          git commit -m "chore(profile): update contribution totals"
+          git push

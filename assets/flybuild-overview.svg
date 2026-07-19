@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="440" viewBox="0 0 1280 440" role="img" aria-labelledby="title desc">
+  <title id="title">FlyBuild verified feature overview</title>
+  <desc id="desc">A feature overview of building file management, import and export tasks, 3D preview, sharing, workflows, and supported file types. This is not a product screenshot.</desc>
+  <rect width="1280" height="440" fill="#2457FF"/>
+  <rect x="36" y="32" width="1208" height="376" fill="#F4F4F0"/>
+  <text x="70" y="77" fill="#111111" font-family="Arial, sans-serif" font-size="15" font-weight="700">FLYBUILD / VERIFIED FEATURE OVERVIEW</text>
+  <text x="1210" y="77" fill="#555555" text-anchor="end" font-family="Arial, sans-serif" font-size="13">NOT A PRODUCT SCREENSHOT</text>
+  <path d="M70 98H1210" stroke="#111111" stroke-width="2"/>
+  <text x="70" y="161" fill="#111111" font-family="Arial, sans-serif" font-size="42" font-weight="800">BUILDING FILE WORKSPACE</text>
+  <g font-family="Arial, sans-serif" font-weight="700" font-size="17">
+    <rect x="70" y="201" width="202" height="72" fill="#2457FF"/><text x="171" y="244" text-anchor="middle" fill="#FFFFFF">FILE LIBRARY</text>
+    <rect x="286" y="201" width="202" height="72" fill="#FF5A36"/><text x="387" y="244" text-anchor="middle" fill="#111111">IMPORT / EXPORT</text>
+    <rect x="502" y="201" width="202" height="72" fill="#168C78"/><text x="603" y="244" text-anchor="middle" fill="#FFFFFF">3D PREVIEW</text>
+    <rect x="718" y="201" width="202" height="72" fill="#FFFFFF" stroke="#111111" stroke-width="2"/><text x="819" y="244" text-anchor="middle" fill="#111111">SHARE CODE</text>
+    <rect x="934" y="201" width="276" height="72" fill="#111111"/><text x="1072" y="244" text-anchor="middle" fill="#FFFFFF">WORKFLOW / SERVER</text>
+  </g>
+  <text x="70" y="318" fill="#555555" font-family="monospace" font-size="15">.bdx  .mcstructure  .schem  .schematic  .litematic  .mcworld  .png  .jpg</text>
+  <path d="M70 340H1210" stroke="#B8B8B2"/>
+  <text x="70" y="376" fill="#111111" font-family="Arial, 'Noto Sans SC', sans-serif" font-size="17">个人独立开发 · SOURCE PRIVATE · IMPORT PIPELINE UNDER REWORK</text>
+</svg>
