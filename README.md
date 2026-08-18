@@ -37,19 +37,19 @@ Agents 已经进入我的日常开发流程；需求取舍、架构决策、集�
 
 ---
 
-### [oc-remote](https://github.com/Wuxie233/oc-remote) · 把本地 Coding Agent 带到手机上
+### [CodeCarry](https://github.com/Wuxie233/codecarry) · 把本地 Coding Agent 带到手机上
 
 <p align="center">
   <picture>
     <source media="(max-width: 600px)" srcset="./assets/oc-chat.jpg" />
-    <img src="./assets/oc-showcase.jpg" alt="oc-remote server, coding agent conversation, and settings screens" width="100%" />
+    <img src="./assets/oc-showcase.jpg" alt="CodeCarry server, coding agent conversation, and settings screens" width="100%" />
   </picture>
 </p>
 
-基于 [`crim50n/oc-remote`](https://github.com/crim50n/oc-remote) 持续开发的 Android 客户端，用手机连接远端 OpenCode / Codex 工作环境。我的扩展包括 Codex app-server、移动端 Terminal / PTY、多服务器管理、15 种语言、离线草稿，以及大型会话的稳定性修复。
+从 [`crim50n/oc-remote`](https://github.com/crim50n/oc-remote) 出发后独立维护的 Android 客户端，用手机连接远端 OpenCode、Codex app-server、Pi Roundtable 和 Pi Stack。我补上了 Codex 协议接入、移动端 Terminal / PTY、多服务器、15 种语言、离线草稿，以及大型会话在内存和历史上的稳定性。
 
 **我负责：** 上述功能的设计、实现、移动端体验和问题修复。<br />
-**可验证：** [Fork 与提交记录](https://github.com/Wuxie233/oc-remote)
+**可验证：** [独立仓库](https://github.com/Wuxie233/codecarry)
 
 `Kotlin` `Android` `Codex app-server` `PTY`
 
@@ -78,18 +78,26 @@ Agents 已经进入我的日常开发流程；需求取舍、架构决策、集�
   <img src="./assets/flybuild-overview.svg" alt="FlyBuild verified feature overview, not a product screenshot" width="100%" />
 </picture>
 
-面向 Minecraft 建筑文件的管理与转换工作台。现有产品包含文件管理、导入导出任务、3D 预览、分享码、工作流和服务器配置，覆盖 `.bdx`、`.mcstructure`、`.schem`、`.schematic`、`.litematic`、`.mcworld` 及常见图片格式。
+面向 Minecraft 基岩版（网易版优先）建筑团队和服主的云端工作台。自己写了 `.bdx`、`.mcstructure`、`.schem`、`.schematic`、`.litematic`、`.mcworld` 以及常见图片格式的解析与封装；任务真正进服时，还要适配网易版登录和租赁服 / 我的山头 / 联机大厅入口。上面再叠文件库、分片上传、任务调度、3D 预览、分享码和工作流。
 
 **个人独立开发，源码私有。** 产品正在运营，社群成员近 500 人。<br />
 **可验证：** [线上产品](https://build.flyshop.chat/)
 
-`Web app` `3D preview` `File pipeline` `Workflow`
+`Go` `Gin` `Vue 3` `PostgreSQL` `Redis` `Bedrock / NetEase`
 
 ## Engineering Work
 
 ### [micode](https://github.com/Wuxie233/micode)
 
-面向 OpenCode 的多 Agent 工程插件：把需求对齐、规划、并行实现、审查和恢复放进一条可追踪的工作流。项目从 [`vtemian/micode`](https://github.com/vtemian/micode) 出发，后来重做了工作流、领域边界、GitHub 生命周期和分层知识系统。
+面向 OpenCode 的多 Agent 工程插件。起点是 [`vtemian/micode`](https://github.com/vtemian/micode)，后来我重做了工作流、领域边界、GitHub 生命周期和分层知识。
+
+设计上我不把 Agent 当成更快的聊天框。需求先对齐，再规划，再实现；跨前后端时先冻结 API 契约，再并行改代码。项目知识分成三层：代码怎么写、仓库怎么组织、过去为什么这么选。后者进 SQLite，worktree 清掉以后还在。远程写 git 之前先判断仓库归属，不自动推 upstream，不用 `--force`。
+
+### [OpenCode Ensemble](https://github.com/Wuxie233/opencode-ensemble)
+
+从 [`hueyexe/opencode-ensemble`](https://github.com/hueyexe/opencode-ensemble) 出发后独立维护的 Agent 团队运行时。上游解决的是「把多个 Agent 同时跑起来」；我继续做的是协调协议本身：谁能写、谁只读、任务依赖怎么解锁、崩溃后工作不能丢。
+
+并行本身不够。Writer 进独立 worktree，Reviewer 不许落盘，Lead 负责集成和终验。队友中途挂掉，应该留下分支和结构化结果，而不是在主工作区留一个洞。仪表盘按排障来做：先看到谁卡住，再点进对应会话。
 
 ### [RimWorld AI](https://github.com/Wuxie233/RimWorldMod_RimWorldAI)
 
@@ -103,8 +111,8 @@ RimWorld 多 Agent 殖民地管理系统。游戏 Mod 通过 MCP 暴露受控工
 
 | Product | Engineering | AI systems |
 |---|---|---|
-| 产品定义、交互设计、风险与失败路径 | TypeScript、Python、Kotlin、C#、React、FastAPI | LLM API、MCP、Function Calling、多 Agent 编排 |
-| 原型验证、Web / Android 体验 | GitHub Actions、容器、部署、日志与测试 | 工具权限、上下文管理、人工接管与结果验收 |
+| 产品定义、交互设计、风险与失败路径 | TypeScript、Go、Python、Kotlin、C#、Vue / React、Gin、FastAPI | LLM API、MCP、Function Calling、多 Agent 编排 |
+| 原型验证、Web / Android 体验 | PostgreSQL、Redis、GitHub Actions、容器、部署、日志与测试 | 工具权限、上下文管理、人工接管与结果验收 |
 
 ## Elsewhere
 

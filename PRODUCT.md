@@ -10,8 +10,8 @@
 
 ## Content Contract
 
-- 主展区固定为 Pulse、oc-remote、BDXSuperTool、FlyBuild。
-- 工程选集固定为 micode、RimWorld AI、SpireVibePlaying。
+- 主展区固定为 Pulse、CodeCarry、BDXSuperTool、FlyBuild。
+- 工程选集固定为 micode、OpenCode Ensemble、RimWorld AI、SpireVibePlaying。
 - 产品说明只写已经核实的行为、责任和限制。
 - fork 明确上游；私有源码明确标注，不用无法公开的代码作证据。
 - GitHub 统计可汇总私有贡献，但不展示私有仓库名称或内容。

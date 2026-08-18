@@ -15,9 +15,9 @@
     <rect x="370" y="357" width="298" height="72" fill="#FFFFFF" stroke="#111111" stroke-width="2"/><text x="519" y="401" text-anchor="middle" fill="#111111">SHARE CODE</text>
     <rect x="52" y="449" width="616" height="72" fill="#111111"/><text x="360" y="493" text-anchor="middle" fill="#FFFFFF">WORKFLOW / SERVER</text>
   </g>
-  <text x="52" y="573" fill="#555555" font-family="monospace" font-size="16">.bdx · .mcstructure · .schem</text>
-  <text x="52" y="601" fill="#555555" font-family="monospace" font-size="16">.schematic · .litematic · .mcworld</text>
-  <text x="52" y="629" fill="#555555" font-family="monospace" font-size="16">.png · .jpg · .jpeg</text>
+  <text x="52" y="573" fill="#555555" font-family="monospace" font-size="16">CODECS · .bdx · .mcstructure</text>
+  <text x="52" y="601" fill="#555555" font-family="monospace" font-size="16">.schem · .litematic · .mcworld</text>
+  <text x="52" y="629" fill="#555555" font-family="monospace" font-size="16">NETEASE LOGIN / SERVER ENTRY</text>
   <path d="M52 667H668" stroke="#B8B8B2"/>
   <text x="52" y="708" fill="#111111" font-family="Arial, 'Noto Sans SC', sans-serif" font-size="18">个人独立开发 · SOURCE PRIVATE</text>
   <text x="52" y="739" fill="#555555" font-family="Arial, sans-serif" font-size="16">OPERATING · COMMUNITY NEARLY 500</text>
