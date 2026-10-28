@@ -1,68 +1,61 @@
 <p align="center">
   <picture>
-    <source media="(max-width: 600px)" srcset="./assets/cover-mobile.svg" />
-    <img src="./assets/cover.svg" alt="Wuxie, independent product developer and AI-native full-stack builder." width="100%" />
+    <source media="(max-width: 600px)" srcset="./assets/hero-mobile.svg" />
+    <img src="./assets/hero.svg" alt="WUXIE in pixel blocks. 人应该诗一般栖居在大地上，而不是变成灰色的铁鸟。A staircase of command blocks climbs toward the stars." width="100%" />
   </picture>
 </p>
 
-我做能直接使用的产品，也喜欢把复杂系统整理成顺手的工具。从产品定义、交互和系统设计，到前后端实现、部署与验证，我会完整负责一条产品线。
-
-Agents 已经进入我的日常开发流程；需求取舍、架构决策、集成质量和最终结果仍由我负责。
-
-`Product` · `Full-stack` · `AI agents` · `Developer tools` · `Interaction design`
+AI-native 全栈 · 产品、工具与 Agent 系统 · 出身 Minecraft 命令方块
 
 <p>
   <a href="https://wuxie233.com">Website</a> ·
+  <a href="https://wiki.wuxie233.com/">Neomega Wiki</a> ·
   <a href="https://space.bilibili.com/254160530">Bilibili</a> ·
   <a href="mailto:445714414@qq.com">Email</a>
 </p>
 
 <picture>
   <source media="(max-width: 600px)" srcset="./assets/github-stats-mobile.svg" />
-  <img src="./assets/github-stats.svg" alt="GitHub contributions over the latest rolling year" width="100%" />
+  <img src="./assets/github-stats.svg" alt="GitHub contributions over the latest rolling year, drawn as a skyline of blocks, one column per day" width="100%" />
 </picture>
 
-## Products
+## 作品
 
-### [Pulse](https://pulse.wuxie233.com) · 交易前，看清钱包风险
+### Minecraft 指令系统 · 在命令方块里写一整个游戏
 
-<img src="./assets/pulse.png" alt="Pulse wallet health analysis product interface" width="100%" />
+<img src="./assets/work-commands.svg" alt="116 command chains, only a few lit at a time: 7295 command blocks, and with nobody triggering a feature only about three hundred run each tick." width="100%" />
 
-面向 Mantle 的钱包健康分析与交易前风险工具。确定性模型先计算集中度、流动性、协议依赖等五类风险，AI 再解释结果；提交交易前还会解码 calldata，给出安全、谨慎或危险判断。报告哈希可由具备 ERC-8004 身份的 Agent 发布到链上复核。
+空岛、数据化、枪械、类幸存者，每一套都是网易租赁服导入即用的纯指令系统，以付费文件交付给服主，附带长期更新和售后。
 
-**我负责：** 产品定义、风险模型、合约、前后端、交互、部署。<br />
-**可验证：** [线上 App](https://pulse.wuxie233.com) · [公开仓库](https://github.com/Wuxie233/pulse)
+最新一代空岛一条龙有 116 条命令链、7295 个命令方块。每条链都有链首门控，服里有人但没人触发功能时，每 tick 只跑三百来个。它是圈内第一个把岛屿数据存进服务器后台的空岛系统，岛主下线别人照样能访问他的岛；更新也只换改动过的那条链，不用整区重导。
 
-`TypeScript` `Onchain` `Risk model` `AI explanation`
+**个人独立设计与开发，作品文件不公开。**<br />
+**可验证：** [系统文档与更新公告](https://github.com/Wuxie233/MarkDown) · [演示视频](https://www.bilibili.com/video/BV1boebziEiK)
+
+`mcfunction` `Bedrock` `玩法策划` `性能预算`
 
 ---
 
-### [CodeCarry](https://github.com/Wuxie233/codecarry) · 把本地 Coding Agent 带到手机上
+### [Neomega](https://wiki.wuxie233.com/) · 正在做
 
-<p align="center">
-  <picture>
-    <source media="(max-width: 600px)" srcset="./assets/oc-chat.jpg" />
-    <img src="./assets/oc-showcase.jpg" alt="CodeCarry server, coding agent conversation, and settings screens" width="100%" />
-  </picture>
-</p>
+<img src="./assets/work-neomega.svg" alt="Events flow from a NetEase rental server through the Neomega Host to Python plugins, and actions flow back. Connection, protocol and crash recovery go to the framework; you only write gameplay." width="100%" />
 
-从 [`crim50n/oc-remote`](https://github.com/crim50n/oc-remote) 出发后独立维护的 Android 客户端，用手机连接远端 OpenCode、Codex app-server、Pi Roundtable 和 Pi Stack。我补上了 Codex 协议接入、移动端 Terminal / PTY、多服务器、15 种语言、离线草稿，以及大型会话在内存和历史上的稳定性。
+给网易租赁服写的常驻机器人与插件框架。服主和插件作者不用再和连接、协议、崩溃恢复较劲，只写自己想要的玩法。
 
-**我负责：** 上述功能的设计、实现、移动端体验和问题修复。<br />
-**可验证：** [独立仓库](https://github.com/Wuxie233/codecarry)
+在 NeOmega 核心之上，Go 写的 Host 负责连接、事件、插件进程和动作调度；作者用 Python SDK 写插件，有权限、持久化和动作收据。AI 可以帮你写插件，但框架运行不依赖 AI。
 
-`Kotlin` `Android` `Codex app-server` `PTY`
+**框架源码私有；Wiki、开发工具包和入门教程公开。**<br />
+**可验证：** [公开 Wiki](https://wiki.wuxie233.com/) · [开发工具包](https://wiki.wuxie233.com/toolkit/) · [第一个插件](https://wiki.wuxie233.com/develop/first-plugin)
+
+`Go` `Python SDK` `NetEase Bedrock` `Plugin runtime`
 
 ---
 
 ### [BDXSuperTool](https://bdx.wuxie233.com/) · 命令链格式转换工具
 
-<picture>
-  <source media="(max-width: 600px)" srcset="./assets/bdx-overview-mobile.svg" />
-  <img src="./assets/bdx-overview.svg" alt="BDXSuperTool verified feature overview, not a product screenshot" width="100%" />
-</picture>
+<img src="./assets/work-bdx.svg" alt="Bedrock commands light up one by one and become stacked command blocks: thousands of command blocks, no more moving them by hand." width="100%" />
 
-把 Minecraft 基岩版命令链的转换和维护集中到一个 Web 工具里。支持 `MCFunction → BDX`、`BDX → MCFunction / JSON`、`文本 → BDX`，并提供增量更新、命令链属性配置和深浅主题。
+把基岩版命令链的转换和维护集中到一个 Web 工具里：`MCFunction → BDX`、`BDX → MCFunction / JSON`、`文本 → BDX`，支持增量更新和命令链属性配置。
 
 **个人独立开发，源码私有。**<br />
 **可验证：** [线上产品](https://bdx.wuxie233.com/)
@@ -71,56 +64,68 @@ Agents 已经进入我的日常开发流程；需求取舍、架构决策、集�
 
 ---
 
-### [FlyBuild](https://build.flyshop.chat/) · 跨格式建筑工作台
+### FlyBuild · 跨格式建筑工作台（已结束运营）
 
-<picture>
-  <source media="(max-width: 600px)" srcset="./assets/flybuild-overview-mobile.svg" />
-  <img src="./assets/flybuild-overview.svg" alt="FlyBuild verified feature overview, not a product screenshot" width="100%" />
-</picture>
+<img src="./assets/work-flybuild.svg" alt="An isometric house assembles block by block. Six build formats, one workbench; the community once had more than 500 members and FlyBuild has ended operation." width="100%" />
 
-面向 Minecraft 基岩版（网易版优先）建筑团队和服主的云端工作台。自己写了 `.bdx`、`.mcstructure`、`.schem`、`.schematic`、`.litematic`、`.mcworld` 以及常见图片格式的解析与封装；任务真正进服时，还要适配网易版登录和租赁服 / 我的山头 / 联机大厅入口。上面再叠文件库、分片上传、任务调度、3D 预览、分享码和工作流。
+给基岩版（网易版优先）建筑团队和服主的云端工作台。我自己写了 `.bdx`、`.mcstructure`、`.schem`、`.schematic`、`.litematic`、`.mcworld` 和常见图片格式的解析与封装，适配网易版登录和租赁服 / 我的山头 / 联机大厅入口，再叠上文件库、分片上传、任务调度、3D 预览和分享码。
 
-**个人独立开发，源码私有。** 产品正在运营，社群成员近 500 人。<br />
-**可验证：** [线上产品](https://build.flyshop.chat/)
+**个人独立开发前后端与导入器，源码私有。** 运营期间有付费用户，社群 500 多人，现已关闭。
 
 `Go` `Gin` `Vue 3` `PostgreSQL` `Redis` `Bedrock / NetEase`
 
-## Engineering Work
+---
 
-### [micode](https://github.com/Wuxie233/micode)
+### [CodeCarry](https://github.com/Wuxie233/codecarry) · 把服务器上的 Coding Agent 带到手机上
 
-面向 OpenCode 的多 Agent 工程插件。起点是 [`vtemian/micode`](https://github.com/vtemian/micode)，后来我重做了工作流、领域边界、GitHub 生命周期和分层知识。
+<p align="center">
+  <picture>
+    <source media="(max-width: 600px)" srcset="./assets/oc-chat.jpg" />
+    <img src="./assets/oc-showcase.jpg" alt="CodeCarry server, coding agent conversation, and settings screens" width="100%" />
+  </picture>
+</p>
 
-设计上我不把 Agent 当成更快的聊天框。需求先对齐，再规划，再实现；跨前后端时先冻结 API 契约，再并行改代码。项目知识分成三层：代码怎么写、仓库怎么组织、过去为什么这么选。后者进 SQLite，worktree 清掉以后还在。远程写 git 之前先判断仓库归属，不自动推 upstream，不用 `--force`。
+从 [`crim50n/oc-remote`](https://github.com/crim50n/oc-remote) 出发后独立维护的 Android 客户端，连接远端 OpenCode、Codex app-server 和 Pi。我补上了 Codex 协议接入、移动端 Terminal / PTY、多服务器、15 种语言、离线草稿，以及大型会话的内存和历史稳定性。
 
-### [OpenCode Ensemble](https://github.com/Wuxie233/opencode-ensemble)
+**可验证：** [独立仓库](https://github.com/Wuxie233/codecarry)
 
-从 [`hueyexe/opencode-ensemble`](https://github.com/hueyexe/opencode-ensemble) 出发后独立维护的 Agent 团队运行时。上游解决的是「把多个 Agent 同时跑起来」；我继续做的是协调协议本身：谁能写、谁只读、任务依赖怎么解锁、崩溃后工作不能丢。
+`Kotlin` `Android` `Codex app-server` `PTY`
 
-并行本身不够。Writer 进独立 worktree，Reviewer 不许落盘，Lead 负责集成和终验。队友中途挂掉，应该留下分支和结构化结果，而不是在主工作区留一个洞。仪表盘按排障来做：先看到谁卡住，再点进对应会话。
+---
 
-### [RimWorld AI](https://github.com/Wuxie233/RimWorldMod_RimWorldAI)
+### [Pulse](https://pulse.wuxie233.com) · 交易前，看清钱包风险
 
-RimWorld 多 Agent 殖民地管理系统。游戏 Mod 通过 MCP 暴露受控工具，独立 Runtime 负责规划与调用，WebUI 负责状态、日志和人工控制。
+<img src="./assets/pulse.png" alt="Pulse wallet health analysis product interface" width="100%" />
 
-### [SpireVibePlaying](https://github.com/Wuxie233/SpireVibePlaying)
+面向 Mantle 的钱包健康分析与交易前风险工具。确定性模型先算集中度、流动性、协议依赖等五类风险，AI 再解释结果；提交交易前还会解码 calldata，给出安全、谨慎或危险判断。
 
-《Slay the Spire 2》AI 辅助 Mod。它跟踪牌堆并计算抽牌概率，用确定性 DFS 求解战斗，再让 LLM 结合上下文解释建议。
+**我负责：** 产品定义、风险模型、合约、前后端、交互、部署。<br />
+**可验证：** [线上 App](https://pulse.wuxie233.com) · [公开仓库](https://github.com/Wuxie233/pulse)
 
-## Capability Stack
+`TypeScript` `Onchain` `Risk model` `AI explanation`
 
-| Product | Engineering | AI systems |
-|---|---|---|
-| 产品定义、交互设计、风险与失败路径 | TypeScript、Go、Python、Kotlin、C#、Vue / React、Gin、FastAPI | LLM API、MCP、Function Calling、多 Agent 编排 |
-| 原型验证、Web / Android 体验 | PostgreSQL、Redis、GitHub Actions、容器、部署、日志与测试 | 工具权限、上下文管理、人工接管与结果验收 |
+## 我怎么和 AI 一起工作
 
-## Elsewhere
+我几乎不手写代码。AI 是我的团队，我负责想清楚：这个东西为谁做，用起来应该是什么感觉，哪里绝不能出错，做完怎么证明它成立。
+
+为了让这支团队靠得住，我在自己的服务器上搭了一间全天运转的 Agent 工作室。其中公开的部分：
+
+- **[micode](https://github.com/Wuxie233/micode)**：让 Agent 先对齐、再规划、再实现；跨前后端时先冻结接口再并行。项目知识分三层沉淀，worktree 清掉以后还在。起点是 [`vtemian/micode`](https://github.com/vtemian/micode)。
+- **[OpenCode Ensemble](https://github.com/Wuxie233/opencode-ensemble)**：多个 Agent 并行时，谁能写、谁只读、谁挂了工作也不丢。起点是 [`hueyexe/opencode-ensemble`](https://github.com/hueyexe/opencode-ensemble)。
+- **[DSH 插件](https://github.com/Wuxie233?tab=repositories&q=dsh-plugin)**：给 DeepSeek Harness 写的一组小插件，处理会话标题、模型能力、多 Agent 看板等日常摩擦。
+
+## 让 AI 走进游戏
+
+- **[RimWorld AI](https://github.com/Wuxie233/RimWorldMod_RimWorldAI)**：多 Agent 管理殖民地。Mod 通过 MCP 暴露受控工具，独立 Runtime 规划和调用，WebUI 负责状态和人工接管。
+- **[SpireVibePlaying](https://github.com/Wuxie233/SpireVibePlaying)**：《杀戮尖塔 2》辅助 Mod。跟踪牌堆、算抽牌概率，用确定性搜索求解战斗，再让 LLM 结合局势解释建议。
+
+## 别处
 
 <table>
   <tr>
     <td width="96"><a href="https://space.bilibili.com/254160530"><img src="./assets/bilibili-avatar.jpg" alt="无邪大得很 Bilibili avatar" width="72" /></a></td>
-    <td><strong><a href="https://space.bilibili.com/254160530">无邪大得很</a></strong><br />在 B 站分享 Minecraft 命令、工具开发、创意和实现思路。相比完整教学，我更常讲清一个想法怎样落地。</td>
+    <td><strong><a href="https://space.bilibili.com/254160530">无邪大得很</a></strong><br />比起做教学视频，更愿意做创意分享和思路分享。</td>
   </tr>
 </table>
 
-<p align="center"><strong>Wuxie · Build the product, then prove it works.</strong></p>
+<p align="center"><strong>Wuxie · 把念头打磨成作品。</strong></p>
