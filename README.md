@@ -143,6 +143,14 @@ AI-native 全栈 · 产品、工具与 Agent 系统 · 出身 Minecraft 命令�
 - **[RimWorld AI](https://github.com/Wuxie233/RimWorldMod_RimWorldAI)**：多 Agent 管理殖民地。Mod 通过 MCP 暴露受控工具，独立 Runtime 规划和调用，WebUI 负责状态和人工接管。
 - **[SpireVibePlaying](https://github.com/Wuxie233/SpireVibePlaying)**：《杀戮尖塔 2》辅助 Mod。跟踪牌堆、算抽牌概率，用确定性搜索求解战斗，再让 LLM 结合局势解释建议。
 
+## 关于名字
+
+无邪这个名字，我从 8 岁用到现在。
+
+其他平台上我叫「无邪大得很」。小时候取名流行「xx大大」，我起的是无邪大大，后来重名了。按当时的童心，我得比无邪大大再厉害一点，于是有了无邪大得很。
+
+我对名字比较专一，全平台都用它，至少十年了，现在也还在用。
+
 ## 别处
 
 <table>
