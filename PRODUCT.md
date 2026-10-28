@@ -14,7 +14,7 @@
 - 唯一的个人叙述是「关于名字」：无邪从 8 岁用到现在，无邪大得很的由来，全平台沿用至少十年。放在「别处」之前，保持用户原话的语气。
 - 作品顺序：Minecraft 指令系统、Neomega（正在做）、BDXSuperTool、FlyBuild（已结束运营）、CodeCarry、Pulse。
 - 每件作品只写已核实的行为、责任和限制，再给可验证入口；不写「我为什么做它」一类个人动机。
-- 「我怎么和 AI 一起工作」写当前工作流：以 Matt Pocock 的 skills 为底加个人调整；micode、OpenCode Ensemble、DSH 插件归入「早期探索」，标明已不是主力但可参考；「游戏模组」以 Isaac Dodge Assist、Camp Agent 为大图作品，RimWorld AI、SpireVibePlaying 为文字条目。
+- 「我怎么和 AI 一起工作」只说目前在用 Matt Pocock 的 skills 并链到其官方仓库，不透露个人调整的内容；micode、OpenCode Ensemble、DSH 插件归入「早期探索」，标明已不是主力但可参考；「游戏模组」以 Isaac Dodge Assist、Camp Agent 为大图作品，RimWorld AI、SpireVibePlaying 为文字条目。
 - fork 明确上游；私有源码明确标注，不用无法公开的代码作证据。
 - 收入金额、学校、专业、年级不进主页；比赛奖项只在对应作品介绍里写。
 - GitHub 统计可汇总私有贡献，但不展示私有仓库名称或内容。

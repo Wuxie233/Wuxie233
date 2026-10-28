@@ -108,7 +108,7 @@ AI-native 全栈 · 产品、工具与 Agent 系统 · 出身 Minecraft 命令�
 
 我几乎不手写代码。AI 是我的团队，我负责想清楚：这个东西为谁做，用起来应该是什么感觉，哪里绝不能出错，做完怎么证明它成立。
 
-现在的工作流以 [Matt Pocock 的 skills](https://github.com/mattpocock/skills) 为底，按我的习惯加了几样：方案先交给独立 Agent 对抗审查，spec 和 ticket 定期精简掉过度设计，独立任务拆成 ticket 交给多个 Agent 并行开发，项目自带一份轻量的上下文和决策记录。
+目前主要在用 [Matt Pocock 的 skills](https://github.com/mattpocock/skills)，推荐直接去他的仓库看。
 
 ### 早期探索
 
