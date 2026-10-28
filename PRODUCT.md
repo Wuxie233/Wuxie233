@@ -13,9 +13,9 @@
 - 首屏下只有一行身份符号：AI-native 全栈 · 产品、工具与 Agent 系统 · 出身 Minecraft 命令方块。不写成长经历、开服故事或心路。
 - 作品顺序：Minecraft 指令系统、Neomega（正在做）、BDXSuperTool、FlyBuild（已结束运营）、CodeCarry、Pulse。
 - 每件作品只写已核实的行为、责任和限制，再给可验证入口；不写「我为什么做它」一类个人动机。
-- 「我怎么和 AI 一起工作」只收公开仓库：micode、OpenCode Ensemble、DSH 插件；「让 AI 走进游戏」收 RimWorld AI、SpireVibePlaying。
+- 「我怎么和 AI 一起工作」只收公开仓库：micode、OpenCode Ensemble、DSH 插件；「游戏模组」以 Isaac Dodge Assist、Camp Agent 为大图作品，RimWorld AI、SpireVibePlaying 为文字条目。
 - fork 明确上游；私有源码明确标注，不用无法公开的代码作证据。
-- 收入金额、学校、专业、年级和比赛经历不进主页。
+- 收入金额、学校、专业、年级不进主页；比赛奖项只在对应作品介绍里写。
 - GitHub 统计可汇总私有贡献，但不展示私有仓库名称或内容。
 - B 站只展示账号与内容方向，不用粉丝数替代作品证明。
 

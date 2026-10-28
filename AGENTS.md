@@ -16,7 +16,7 @@
 - Mark forks and private-source products explicitly.
 - Use real screenshots where available; illustrations must not imitate product UI.
 - Never expose private repository names or content in profile statistics.
-- Keep AdventureX recruiting, school, major, grade, income figures, and competition history outside this long-term Profile.
+- Keep AdventureX recruiting, school, major, grade, and income figures outside this long-term Profile. Awards may appear only inside the matching work entry.
 - FlyBuild has ended operation: no live link, and say so.
 - CodeCarry is the independently maintained successor of the old oc-remote card; keep the upstream credit.
 - FlyBuild may mention format codecs and NetEase login / server-entry adaptation. Do not write reverse-engineering claims on the Profile.

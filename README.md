@@ -114,7 +114,31 @@ AI-native 全栈 · 产品、工具与 Agent 系统 · 出身 Minecraft 命令�
 - **[OpenCode Ensemble](https://github.com/Wuxie233/opencode-ensemble)**：多个 Agent 并行时，谁能写、谁只读、谁挂了工作也不丢。起点是 [`hueyexe/opencode-ensemble`](https://github.com/hueyexe/opencode-ensemble)。
 - **[DSH 插件](https://github.com/Wuxie233?tab=repositories&q=dsh-plugin)**：给 DeepSeek Harness 写的一组小插件，处理会话标题、模型能力、多 Agent 看板等日常摩擦。
 
-## 让 AI 走进游戏
+## 游戏模组
+
+### [Isaac Dodge Assist](https://github.com/Wuxie233/isaac-dodge-assist) · 以撒紧急躲避
+
+<img src="./assets/work-isaac.svg" alt="A top-down Isaac room: shots converge on the player, who steps aside along a short path and then gets control back." width="100%" />
+
+《以撒的结合：忏悔+》辅助模组。Lua 传感器逐帧预测弹幕、激光、爆炸和危险地形，人工走位即将进入危险范围、且存在更安全方向时，原生输入程序接管键盘移动，危险解除后交还。另有自动瞄准与自动战斗模式。联机时按测得的输入排队延迟拉长预测窗口，并从输入设备证据自动识别本机角色。
+
+**可验证：** [公开仓库](https://github.com/Wuxie233/isaac-dodge-assist)
+
+`Lua` `C++` `C#` `Closed-loop simulation`
+
+---
+
+### [Camp Agent](https://github.com/Wuxie233/necesse-camp-agent) · Necesse 营地 Agent
+
+<img src="./assets/work-necesse.svg" alt="A top-down Necesse camp where villagers carry goods between storage chests and workstations." width="100%" />
+
+《Necesse》房主端模组加 Agent 控制脚本。模组在房主进程里开放营地观察与原生交互，外部 Agent 用本地工具盘点仓储、安排村民分工、下生产订单、按布局建造；材料成本、解锁、探索和战斗都不跳过。交互模块可在不关房的情况下热更新，校验失败时保留旧版。
+
+**可验证：** [公开仓库](https://github.com/Wuxie233/necesse-camp-agent)
+
+`Java` `Python` `Agent tools` `Hot reload`
+
+---
 
 - **[RimWorld AI](https://github.com/Wuxie233/RimWorldMod_RimWorldAI)**：多 Agent 管理殖民地。Mod 通过 MCP 暴露受控工具，独立 Runtime 规划和调用，WebUI 负责状态和人工接管。
 - **[SpireVibePlaying](https://github.com/Wuxie233/SpireVibePlaying)**：《杀戮尖塔 2》辅助 Mod。跟踪牌堆、算抽牌概率，用确定性搜索求解战斗，再让 LLM 结合局势解释建议。

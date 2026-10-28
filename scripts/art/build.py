@@ -397,6 +397,89 @@ def works_flybuild():
     (ASSETS / "work-flybuild.svg").write_text(svg(1280, 400, "FlyBuild", desc, FLY_STYLE, title + "".join(tags) + end + "".join(blocks) + "".join(windows)))
 
 
+ISAAC_STYLE = f"""
+.shot {{ animation: shot 4.4s var(--d) infinite linear; }}
+@keyframes shot {{ 0% {{ transform: translate(0, 0); opacity: 0; }} 6% {{ opacity: 1; }} 70% {{ opacity: 1; }} 80%, 100% {{ transform: translate(var(--tx), var(--ty)); opacity: 0; }} }}
+.pl {{ animation: dodge 4.4s infinite cubic-bezier(.16,1,.3,1); }}
+@keyframes dodge {{ 0%, 30% {{ transform: none; }} 38%, 72% {{ transform: translate(0, 68px); }} 86%, 100% {{ transform: none; }} }}
+.ring {{ opacity: 0; animation: ring 4.4s infinite; }}
+@keyframes ring {{ 0%, 18% {{ opacity: 0; }} 26%, 34% {{ opacity: 1; }} 44%, 100% {{ opacity: 0; }} }}
+.path {{ opacity: 0; animation: path 4.4s infinite; }}
+@keyframes path {{ 0%, 28% {{ opacity: 0; }} 34%, 70% {{ opacity: 1; }} 80%, 100% {{ opacity: 0; }} }}
+"""
+
+
+def works_isaac():
+    t = 34
+    rx, ry, cols, rows = 696, 81, 13, 7
+    tiles = [f'<rect x="{rx - 8}" y="{ry - 8}" width="{cols * t + 16}" height="{rows * t + 16}" rx="6" fill="#16141F" stroke="{LINE}" stroke-width="2"/>']
+    for c in range(cols):
+        for r in range(rows):
+            if (c + r) % 2 == 0:
+                tiles.append(f'<rect x="{rx + c * t}" y="{ry + r * t}" width="{t}" height="{t}" fill="#1B1926"/>')
+    for c, r in [(2, 1), (2, 5), (10, 1), (10, 5)]:
+        x, y = rx + c * t, ry + r * t
+        tiles.append(f'<rect x="{x + 3}" y="{y + 3}" width="{t - 6}" height="{t - 6}" rx="4" fill="#38354C"/>')
+    px, py = rx + 6 * t + t / 2, ry + 3 * t + t / 2
+    shots = []
+    for i, (sx, sy) in enumerate([(rx + 12, py - 6), (rx + 40, py + 30), (px - 30, ry + 6), (rx + cols * t - 14, py - 20)]):
+        tx, ty = (px - sx) * 1.9, (py - sy) * 1.9
+        shots.append(f'<circle class="shot" style="--d:{num(i * 0.18)}s;--tx:{num(tx)}px;--ty:{num(ty)}px" cx="{num(sx)}" cy="{num(sy)}" r="7" fill="{ORANGE}"/>')
+        shots.append(f'<path d="M{num(sx)} {num(sy)}L{num(sx + tx * 0.55)} {num(sy + ty * 0.55)}" stroke="{ORANGE}" stroke-opacity=".22" stroke-width="2" stroke-dasharray="4 6"/>')
+    ring = f'<circle class="ring" cx="{num(px)}" cy="{num(py)}" r="30" fill="none" stroke="{ORANGE}" stroke-width="2"/>'
+    path = f'<path class="path" d="M{num(px)} {num(py + 18)}V{num(py + 58)}" stroke="{GREEN}" stroke-width="3" stroke-dasharray="3 7" stroke-linecap="round"/>'
+    player = f'<g class="pl"><rect x="{num(px - 13)}" y="{num(py - 13)}" width="26" height="26" rx="5" fill="{TEXT}"/><rect x="{num(px - 7)}" y="{num(py - 5)}" width="4" height="6" fill="{NIGHT}"/><rect x="{num(px + 3)}" y="{num(py - 5)}" width="4" height="6" fill="{NIGHT}"/></g>'
+    l1, _ = serif_bold.run("走位将要撞进弹幕时，", 36, 64, 168, TEXT)
+    l2, _ = serif_bold.run("接管键盘，躲开再交还。", 36, 64, 220, TEXT)
+    note, _ = serif.run("以撒的结合：忏悔+ · Lua 传感器与原生输入", 22, 64, 296, DIM)
+    desc = "A top-down Isaac room: enemy shots converge on the player, a danger ring appears, and the player steps aside along a short green path, then control returns. Movement about to run into bullets is taken over briefly and handed back."
+    (ASSETS / "work-isaac.svg").write_text(svg(1280, 400, "Isaac Dodge Assist", desc, ISAAC_STYLE, "".join(tiles) + "".join(shots) + ring + path + player + l1 + l2 + note))
+
+
+NECESSE_STYLE = f"""
+.walker {{ animation: carry 6s var(--d) infinite cubic-bezier(.65,0,.35,1); }}
+@keyframes carry {{ 0%, 8% {{ transform: none; }} 30%, 38% {{ transform: translate(var(--ax), 0); }} 60%, 68% {{ transform: translate(var(--ax), var(--ay)); }} 92%, 100% {{ transform: none; }} }}
+.crop {{ animation: grow 6s var(--d) infinite; transform-box: fill-box; transform-origin: 50% 100%; }}
+@keyframes grow {{ 0% {{ transform: scaleY(.35); }} 80% {{ transform: scaleY(1); }} 100% {{ transform: scaleY(.35); }} }}
+"""
+
+
+def works_necesse():
+    t = 30
+    gx, gy, cols, rows = 650, 70, 18, 9
+    out = [f'<rect x="{gx - 8}" y="{gy - 8}" width="{cols * t + 16}" height="{rows * t + 16}" rx="6" fill="#16141F" stroke="{LINE}" stroke-width="2"/>']
+    for c in range(cols):
+        for r in range(rows):
+            if (c + r) % 2 == 0:
+                out.append(f'<rect x="{gx + c * t}" y="{gy + r * t}" width="{t}" height="{t}" fill="#1B1926"/>')
+    rng = random.Random(9)
+    for i, (c, r) in enumerate([(c, r) for c in range(1, 6) for r in range(5, 8)]):
+        x, y = gx + c * t, gy + r * t
+        out.append(f'<rect x="{x + 2}" y="{y + 2}" width="{t - 4}" height="{t - 4}" fill="#1F3A31"/>')
+        out.append(f'<rect class="crop" style="--d:{num(-rng.uniform(0, 6))}s" x="{x + 11}" y="{y + 6}" width="8" height="16" fill="{GREEN}"/>')
+    chests = [(9, 1), (10, 1), (11, 1)]
+    for c, r in chests:
+        x, y = gx + c * t, gy + r * t
+        out.append(f'<rect x="{x + 3}" y="{y + 5}" width="{t - 6}" height="{t - 9}" rx="2" fill="{ORANGE}"/><rect x="{x + 3}" y="{y + 12}" width="{t - 6}" height="3" fill="#AE5B1B"/>')
+    for c, r in [(15, 4), (15, 6)]:
+        x, y = gx + c * t, gy + r * t
+        out.append(f'<rect x="{x + 1}" y="{y + 3}" width="{2 * t - 2}" height="{t - 4}" rx="3" fill="{VIOLET}"/><rect x="{x + 8}" y="{y + 9}" width="{2 * t - 16}" height="5" fill="#6A4EDB"/>')
+    out.append(f'<rect x="{gx + 1 * t}" y="{gy + 1 * t}" width="{5 * t}" height="{3 * t}" fill="none" stroke="{DIM}" stroke-opacity=".5" stroke-width="2" stroke-dasharray="6 6"/>')
+    walkers = [
+        (10, 2, 4 * t, 2 * t, 0, TEXT),
+        (9, 2, 5 * t, 4 * t, 1.5, TEXT),
+        (4, 4, 6 * t, -2 * t, 3.0, "#D9D4E6"),
+    ]
+    for c, r, ax, ay, d, fill in walkers:
+        x, y = gx + c * t + 8, gy + r * t + 8
+        out.append(f'<rect class="walker" style="--d:{d}s;--ax:{ax}px;--ay:{ay}px" x="{x}" y="{y}" width="14" height="14" rx="3" fill="{fill}"/>')
+    l1, _ = serif_bold.run("仓储和分工交给 Agent，", 36, 64, 168, TEXT)
+    l2, _ = serif_bold.run("材料成本一样不少。", 36, 64, 220, TEXT)
+    note, _ = serif.run("Necesse 房主端模组 · 交互模块可热更新", 22, 64, 296, DIM)
+    desc = "A top-down Necesse camp: crops grow in a field, villagers carry goods between orange storage chests and violet workstations. Storage and job assignment go to the agent; material costs stay the same."
+    (ASSETS / "work-necesse.svg").write_text(svg(1280, 400, "Camp Agent for Necesse", desc, NECESSE_STYLE, "".join(out) + l1 + l2 + note))
+
+
 def stats_glyphs():
     """Unit-size outlines (1em = 1) for the Node stats generator."""
     out = {}
@@ -411,5 +494,7 @@ if __name__ == "__main__":
     works_neomega()
     works_bdx()
     works_flybuild()
+    works_isaac()
+    works_necesse()
     stats_glyphs()
     print("built:", ", ".join(sorted(p.name for p in ASSETS.glob("*.svg"))))
