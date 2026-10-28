@@ -108,7 +108,11 @@ AI-native 全栈 · 产品、工具与 Agent 系统 · 出身 Minecraft 命令�
 
 我几乎不手写代码。AI 是我的团队，我负责想清楚：这个东西为谁做，用起来应该是什么感觉，哪里绝不能出错，做完怎么证明它成立。
 
-为了让这支团队靠得住，我在自己的服务器上搭了一间全天运转的 Agent 工作室。其中公开的部分：
+现在的工作流以 [Matt Pocock 的 skills](https://github.com/mattpocock/skills) 为底，按我的习惯加了几样：方案先交给独立 Agent 对抗审查，spec 和 ticket 定期精简掉过度设计，独立任务拆成 ticket 交给多个 Agent 并行开发，项目自带一份轻量的上下文和决策记录。
+
+### 早期探索
+
+下面是我更早搭的 Agent 工具，已经不是我的主力工作流，但思路仍值得参考。
 
 - **[micode](https://github.com/Wuxie233/micode)**：让 Agent 先对齐、再规划、再实现；跨前后端时先冻结接口再并行。项目知识分三层沉淀，worktree 清掉以后还在。起点是 [`vtemian/micode`](https://github.com/vtemian/micode)。
 - **[OpenCode Ensemble](https://github.com/Wuxie233/opencode-ensemble)**：多个 Agent 并行时，谁能写、谁只读、谁挂了工作也不丢。起点是 [`hueyexe/opencode-ensemble`](https://github.com/hueyexe/opencode-ensemble)。
